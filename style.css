@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #24292f;
+}
+header{
+    width: 100vw;
+    text-align: center;
+}
+
+label{
+    display: block;
+    font-size: 4rem;
+    
+}
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.logo img{
+    width: 200px;
+    height: 150px;
+}
+
+main .container-main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+main .container-main .search{
+    margin-bottom: 20px;
+}
+
+main .container-main .search input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border: 3px solid #24292f;
+    font-size: 2rem;
+}
+main .container-main .search button{
+   display: block;
+   margin: auto;
+   margin-top: 15px;
+   padding: 10px;
+   cursor: pointer;
+   border: none;
+   background-color: #24292f;
+   color: #FFF;
+   border-radius: 20px;
+    
+}
+main .results{
+    width: 50%;
+    margin: auto;
+    
+}
+
+main .results h1{
+    font-size: 4rem;
+}
+main .results label{
+    background-color: #bcc8d3;
+    font-size: 2rem;
+}
+main .animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #FFF; 
+    transition: 1s ease-in-out;
+    
+}
+
+.animation .circles{
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.animation .circles .loading{
+    width: 100px;
+    height: 100px;
+    background-color: #24292f;
+    margin: auto 0;
+    margin-left: 20px;
+    border-radius: 50%;
+    animation: animation 1s infinite ease-in-out alternate;
+    
+}
+
+.animation .circles .loading:nth-child(1){
+    animation-delay: -0.4s;
+}
+
+.animation .circles .loading:nth-child(2){
+    animation-delay: -0.6s;
+}
+
+.animation .circles .loading:nth-child(3){
+    animation-delay: -0.8s;
+}
+.animation .search-text{
+    display: block;
+    justify-content: center;
+    position: absolute;
+    top: 55vh; 
+    margin-top: 10px;
+    left: calc(50vw - 2rem);
+
+}
+
+.animation .search-text h3{
+    font-size: 2rem;
+}
+.off-text{
+    display: none;
+}
+
+
+
+@keyframes animation{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

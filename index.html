@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador de endereço</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logoCEP.png" alt="imagem-logo">
+        </div>
+        <div class="title-header"></div>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="search">
+                <label for="search-cep">Digite o CEP:*</label>
+                <input type="text" name="CEP" id="search-cep" maxlength="9">
+                <button id="btn-search">Buscar</button>
+            </div>
+            <section class="results">
+                <h1>Resultados da busca:</h1>
+                <div class="address-information">
+                    <div class="adress">
+                        <label for="adress">Logradouro/Nome:</label>
+                        <input type="text" id="adress" readonly>
+                    </div>
+                    <div class="complement">
+                        <label for="complement">Complemento:</label>
+                        <input type="text" id="complement" readonly>
+                    </div>
+                    <div class="district">
+                        <label for="district">Bairro/Distrito:</label>
+                        <input type="text" id="district" readonly>
+                    </div>
+                    <div class="locality">
+                        <label for="locality">Localidade:</label>
+                        <input type="text" id="locality" readonly>
+                    </div>
+                    <div class="state">
+                        <label for="state">Estado:</label>
+                        <input type="text" id="state" readonly>
+                    </div>
+                    <div class="zip-code">
+                        <label for="zip-code">CEP:</label>
+                        <input type="text" id="zip-code" readonly>
+                    </div>
+                </div>
+            </section>
+            <section  class="show">
+                <div class="circles">
+                    <div class="loading"></div>
+                    <div class="loading"></div>
+                    <div class="loading"></div>
+                </div>
+                <div class="off-text">
+                    <h3>Buscando...</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#" target="_blank">Felipe</a></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
